@@ -30,7 +30,7 @@
     <br/>
           <div class="box">
           <div class="box-body">
-            <form action="${pageContext.request.contextPath}/buscar" method="POST">
+            <form action="${pageContext.request.contextPath}/buscarTipodocidentidad" method="POST">
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Codigo:</label>
@@ -41,7 +41,7 @@
                     <input type="submit" value="Buscar" class="btn btn-primary"/>
                 </div>
                 <div class="col-sm-1">
-                    <a class="btn btn-info" href="${pageContext.request.contextPath}/formTipDocumento">Nuevo</a>  
+                    <a class="btn btn-info" href="${pageContext.request.contextPath}/formTipodocidentidad">Nuevo</a>  
                 </div>
             </div>
               </form>
@@ -50,7 +50,7 @@
     <c:if test="${!empty ListaTipodocidentidad}">
         <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Reporte de Configuraciones</h3>                                    
+                    <h3 class="box-title">Reporte de documentos</h3>                                    
                 </div><!-- /.box-header -->        
         <div class="box-body table-responsive">
         <table id="example1" class="table table-bordered table-striped">
